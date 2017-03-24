@@ -1,5 +1,6 @@
 installing-logstash:
 https://www.elastic.co/guide/en/logstash/5.2/installing-logstash.html
+<<<<<<< HEAD
 Rest-Assured
 
 辞旧迎新，随想贷一大波版本来了，我的小伙伴，2017属于我们。
@@ -77,3 +78,23 @@ ocr 每次是否都需要。
 
 数据堂 合同。
 
+=======
+
+YUMedit
+Download and install the public signing key:
+
+rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+Add the following in your /etc/yum.repos.d/ directory in a file with a .repo suffix, for example logstash.repo
+
+[logstash-5.x]
+name=Elastic repository for 5.x packages
+baseurl=https://artifacts.elastic.co/packages/5.x/yum
+gpgcheck=1
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+enabled=1
+autorefresh=1
+type=rpm-md
+And your repository is ready for use. You can install it with:
+
+sudo yum install logstash
+>>>>>>> 7e5c56edee9cfec33fc7b21608e3b0505e4fd8fe
